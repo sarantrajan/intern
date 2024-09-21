@@ -6,7 +6,7 @@ collaborate(use multiple user for same account)
 GitHub:
 Repository Hosting Service
 
-Steps:
+Steps for add files from local storage to repository and repository to local storage:
 1. Create repository (using github account)
 2. Create or Add existing file (inside the repository)
 3. Set "user-name" and "email" in local system (using comand prompt) :
@@ -14,6 +14,27 @@ Steps:
 	For user-email:-  git config --global user.email "(email)"
 4. Create folder in local storage ( in ThisPc)
 5. Use repository file in the folder using git command
-	i,  git clone "link of the repository (origin)"  (using visual studio code,  it moves repository also in the folder) 
+	i,  git clone "link of the repository (origin)"  (using visual studio code,  it moves repository also in the folder).
+	ii,  if you create new file in the vs code, it specifies a letter "U" on the file to indicate you to add the file into the repository.
+	     git add "file-name" (Now, it specifies a letter "A" on the file, that indicate its added to the staging area),(add command indicates, the changes are move into the staging area).
+	iii,  git commit -m "message"  (in this command, the message part is compulsory).
+	iv,  git push origin main (Now, it shows the new file in your GitHub account). 
 6. Create new file in repository and added it into the local storage
 	i,  git pull (it shows the modified file into the local storage[vs code]).
+
+Commands:-
+	cd - change directory
+	git clone "link" - link the repository
+	git add . - confirm the every file to be non-untracked
+	git add "file-name" - confirm the particular file to be non-untracked
+	git commit -m "message" - commit the messages to the staging area
+	git push origin main - add the modified file into the GitHub repository
+	git pull - add the modified file into the local storage (vs code)
+	git remote add origin "new-link" - add the new repository into the local storage
+	git branch - show the branch name
+	git branch - create the new branch
+	git branch m main - it change the branch from master to the main branch
+	git branch -a - list out the branch
+	git checkout "branch-name" - switch the branch
+	git diff "branch-name" - shows the different from the branches
+	git merge "branch-name" - merge the branches
