@@ -15,3 +15,5 @@ Steps:
 4. Create folder in local storage ( in ThisPc)
 5. Use repository file in the folder using git command
 	i,  git clone "link of the repository (origin)"  (using visual studio code,  it moves repository also in the folder) 
+6. Create new file in repository and added it into the local storage
+	i,  git pull (it shows the modified file into the local storage[vs code]).
